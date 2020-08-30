@@ -8,10 +8,10 @@ public class MakeChange {
 		double amountTendered = 0;
 		int transformedAmountTendered = 0;
 		int change = 0;
-		
+
 		//Intro to store
 		printIntroduction();
-		
+
 		//Getting user input
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Hmm...haven't sold one of those since the \"incident\", "
@@ -21,22 +21,22 @@ public class MakeChange {
 		transformedPurchasedPrice = (int) purchasedPrice;
 		System.out.println("You look a little shady...you sure you got money?"
 				+ "\nHow much money do you have?");
-		//Cast double into integer		
+		//Cast double into integer
 		amountTendered = keyboard.nextDouble() * 100;
 		transformedAmountTendered = (int) amountTendered;
 		change = transformedAmountTendered - transformedPurchasedPrice;
-	    
+
 		//Closing scanner because I am a good little programmer
 		keyboard.close();
-		
+
 		if (change > 0) {
 		//Practice calling methods
 		int numTens = getTens(change);
-		int numFives = getFives(change);	
-		int numOnes = getOnes(change);	
-		int numQuarters = getQuarters(change);	
-		int numDimes = getDimes(change);	
-		int numNickels = getNickels(change);	
+		int numFives = getFives(change);
+		int numOnes = getOnes(change);
+		int numQuarters = getQuarters(change);
+		int numDimes = getDimes(change);
+		int numNickels = getNickels(change);
 		int numPennies = getPennies(change);
 		printAnswer(numTens, numFives, numOnes, numQuarters, numDimes, numNickels, numPennies);
 		}
@@ -49,7 +49,7 @@ public class MakeChange {
 					+ "\nCome back when you have more green!"
 					+ "\nAnd next time wear a mask!");
 		}
-	}		
+	}
 		public static int getTens(int change) {
 			int tens = change/1000;
 			return tens;
@@ -166,6 +166,6 @@ public class MakeChange {
 			System.out.println("***           --Cash Only, No Refunds--           ***");
 			System.out.println("***                --No Loitering--               ***");
 			System.out.println("***           --No Mask, No Service--             ***");
-			System.out.println("                                                     ");			
+			System.out.println("                                                     ");
 		}
 }
