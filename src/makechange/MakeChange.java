@@ -8,6 +8,7 @@ public class MakeChange {
 		double amountTendered = 0;
 		int transformedAmountTendered = 0;
 		int change = 0;
+		double receipt = 0;
 
 		//Intro to store
 		printIntroduction();
@@ -25,7 +26,7 @@ public class MakeChange {
 		amountTendered = keyboard.nextDouble() * 100;
 		transformedAmountTendered = (int) amountTendered;
 		change = transformedAmountTendered - transformedPurchasedPrice;
-
+		receipt = (double) change / 100;
 		//Closing scanner because I am a good little programmer
 		keyboard.close();
 
@@ -38,7 +39,7 @@ public class MakeChange {
 		int numDimes = getDimes(change);
 		int numNickels = getNickels(change);
 		int numPennies = getPennies(change);
-		printAnswer(numTens, numFives, numOnes, numQuarters, numDimes, numNickels, numPennies);
+		printAnswer(numTens, numFives, numOnes, numQuarters, numDimes, numNickels, numPennies, receipt);
 		}
 		else if (change == 0) {
 			System.out.println("Exact change? What, no tip?...Lousy cheapskate...");
@@ -78,8 +79,8 @@ public class MakeChange {
 			int pennies = ((((((change % 1000) % 500) % 100) % 25) % 10) % 5) / 1;
 			return pennies;
 		}
-		public static void printAnswer(int tens, int fives, int ones, int quarters, int dimes, int nickels, int pennies) {
-			System.out.println("And here I thought you were penniless, here is your change:");
+		public static void printAnswer(int tens, int fives, int ones, int quarters, int dimes, int nickels, int pennies, double receipt) {
+			System.out.println("And here I thought you were penniless, here is your change: $" + receipt);
 			if (tens > 0) {
 				if (fives > 0 || ones > 0 || quarters > 0 || dimes > 0 || nickels > 0 || pennies > 0) {
 					System.out.print(tens + " ten dollar bill, ");
