@@ -2,7 +2,7 @@
 
 ### Overview
 * 1st week Java Project: Cash Register  
-The user will required to enter two monetary amounts.
+The user will be required to enter two monetary amounts.
 There are two acceptable formats:
   - 00.00 with range 00.00 - 20.00
   - 0 with range 0-20  
@@ -14,10 +14,8 @@ the customer's change, in correct denominations.
 
 * EXAMPLE:
   - Price of Item is 3.96
-  - Amount tendered is 20.00  
-
-Program will print to screen:
-  - 1 ten dollar bill, 1 five dollar bill, 1 one dollar bill, 4 pennies.
+  - Amount tendered is 20.00
+  - Outcome: 1 ten dollar bill, 1 five dollar bill, 1 one dollar bill, 4 pennies.
 
 
 ### Topics
@@ -26,6 +24,7 @@ Program will print to screen:
 * Methods
 * Conditionals
 * Basic Arithmetic/Modulo operator
+* Github
 
 #### How to Run
 1. The user will be prompted for two inputs
