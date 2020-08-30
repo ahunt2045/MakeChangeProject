@@ -6,6 +6,7 @@ The user will required to enter two monetary amounts.
 There are two acceptable formats:
   - 00.00 with range 00.00 - 20.00
   - 0 with range 0-20  
+
 The first monetary entry will be the item's price.
 The second monetary entry will be the amount tendered.
 The program will print to screen the difference,
