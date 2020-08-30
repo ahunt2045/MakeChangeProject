@@ -5,15 +5,16 @@
 The user will required to enter two monetary amounts.
 There are two acceptable formats:
   - 00.00 with range 00.00 - 20.00
-  - 0 with range 0-20
-The first monetary entry will be the item's price.
+  - 0 with range 0-20  
+  The first monetary entry will be the item's price.
 The second monetary entry will be the amount tendered.
 The program will print to screen the difference,
 the customer's change, in correct denominations.
 * EXAMPLE:
- - Price of Item is 3.96
- - Amount tendered is 20.00  
- Program will print to screen:
+- Price of Item is 3.96
+- Amount tendered is 20.00  
+
+  Program will print to screen:
  - 1 ten dollar bill, 1 five dollar bill, 1 one dollar bill, 4 pennies.
 
 
